@@ -121,7 +121,11 @@ textarea::placeholder {
 
 .welcome h2 {
     color: rgb(246, 90, 0);
+    width: 80%;
+}
 
+.welcome p {
+    width: 80%;
 }
 
 
@@ -158,8 +162,139 @@ th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    border: 1px solid black;
+}
+
+td i {
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: black;
+
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+/* Admin styles */
+
+.admin-dashboard {
+    margin: 30px auto;
+    width: 80%;
+    height: 400px;
+    display: flex;
+}
+
+.admin-content {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background: #92929265;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.admin-content .history {
+    width: 80%;
+
+}
+
+.admin-content .history td ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.admin-content .history td a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+.admin-content .history td .accept {
+    background: #098d09;
+    color: #fff;
+    border: 2px solid #ffffff;
+    padding: 5px;
+}
+
+.admin-content .history td .accept:hover {
+    background: #098d09;
+    color: #fff;
+    border: 2px solid #098d09;
+}
+
+.admin-content .history td .accepted {
+    background: #1f2937;
+    color: #fff;
+    border: #1f2937;
+    padding: 5px;
+}
+
+.admin-content .history td .accepted:hover {
+    background: #1f2937;
+    color: #fff;
+    border: #1f2937;
+}
+
+
+
+.admin-content .history td .decline {
+    background: #ff0202;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px;
+}
+
+.admin-content .history td .decline:hover {
+    background: #ff0202;
+    border: 2px solid #ff0202;
+    color: #fff;
+}
+
+.admin-content .history td .disable:hover {
+    border: 2px solid #fff;
+}
+
+
+
+.admin-content .history td .ellipse {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+
+.dashboard {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #1f2937;
+    width: 20%;
+    height: 100%;
+}
+
+.dashboard .oil {
+    list-style: none;
+    display: flex;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.dashboard .oil:hover {
+    border-bottom: none;
+    font-weight: bolder;
+}
+
+.dashboard .oil a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin-content .history h1 {
+    margin: 30px 0 -30px 0;
 }

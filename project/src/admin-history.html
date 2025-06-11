@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>02PMS</title>
-    <link rel="stylesheet" href="/style/form.css">
+    <link rel="stylesheet" href="../style/form.css">
     <link rel="stylesheet" href="/style/style.css">
 </head>
 
@@ -23,34 +23,59 @@
             </nav>
         </div>
     </div>
-    <main class="contents">
-        <div class="card-hold">
-            <div class="card-1">
-                <div class="card-1-text">
-                    <h1>Welcome</h1>
-                    <strong>to the 02 Permission Management System</strong> <br>
-                    <p>Submit your absence requests, track your permission history, and stay updated on your approval
-                        status all in one place.</p>
-                </div>
+    <div class="admin-dashboard">
+        <div class="admin-content">
+            <div class="history">
+                <h1>History</h1>
+                <table>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Request's Reason</th>
+                        <th>Status</th>
+                    </tr><br>
+                    <tr>
+                        <td>1</td>
+                        <td>2/6/2026</td>
+                        <td> Moses Agada</td>
+                        <td> Mosesag@gmail.com</td>
+                        <td> Sick</td>
+                        <td>
+                            <ul>
+                                <li><a href="#" class="accept disable">Accepted</a></li>
+                                <li><a href="#" class=" accepted">Declined</a></li>
+                                <li><a href="#" class="ellipse">&hellip;</a></li>
+                            </ul>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>2</td>
+                        <td>1/6/2026</td>
+                        <td> Miracle Daniel</td>
+                        <td> Mimid21@gmail.com</td>
+                        <td> Visitation</td>
+                        <td>
+                            <ul>
+                                <li><a href="#" class="accept accepted">Accepted</a></li>
+                                <li><a href="#" class="decline disable">Declined</a></li>
+                                <li><a href="#" class="ellipse">&hellip;</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </table>
             </div>
-            <div class="card-2">
-                <p>Continue as an...</p>
-                <div class="btnn">
-                    <div class="admin">
-                        <a href="/src/login.html"><button>Admin</button></a>
-                    </div>
-                    <div class="admin">
-                        <a href="/src/login.html"><button>Intern</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-
         </div>
-    </main>
-
-
+        <div class="dashboard">
+            <ul class="oill">
+                <li class="oil"><a href="../src/admin.html">Dashboard</a></li>
+                <li class="oil"><a href="../src/admin-history.html">History</a></li>
+                <li class="oil">Settings</li>
+            </ul>
+        </div>
+    </div>
 
     <footer>
         <div class="footer">
